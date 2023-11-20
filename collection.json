@@ -127,6 +127,14 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "UploadForm.html",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
