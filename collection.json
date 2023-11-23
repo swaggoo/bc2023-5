@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "154a53d9-74e8-43d7-b667-17f6f009535c",
-		"name": "lab5",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26613712"
+		"_postman_id": "71792f34-9409-407f-89ce-4fe55eb81300",
+		"name": "Lab5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30940800"
 	},
 	"item": [
 		{
@@ -11,22 +11,21 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/notes",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"notes"
-					]
-				}
+				"url": "http://localhost:8000/notes"
 			},
 			"response": []
 		},
 		{
-			"name": "/upload/{note_name}",
+			"name": "/UploadForm.html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/UploadForm.html"
+			},
+			"response": []
+		},
+		{
+			"name": "/upload",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -35,115 +34,48 @@
 					"formdata": [
 						{
 							"key": "note_name",
-							"value": "qwe_name",
+							"value": "Money",
 							"type": "text"
 						},
 						{
 							"key": "note",
-							"value": "qwe_text",
+							"value": "GG",
 							"type": "text"
 						}
 					]
 				},
-				"url": {
-					"raw": "http://localhost:8000/upload",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"upload"
-					]
-				}
+				"url": "http://localhost:8000/upload"
 			},
 			"response": []
 		},
 		{
-			"name": "/notes/{note_name}",
+			"name": "/notes/note_name",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/notes/qwe_name",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"notes",
-						"qwe_name"
-					]
-				}
+				"url": "http://localhost:8000/notes/Money"
 			},
 			"response": []
 		},
 		{
-			"name": "/notes/{note_name}",
+			"name": "/notes/note_name",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "sdfddddd",
-					"options": {
-						"raw": {
-							"language": "text"
-						}
-					}
+					"raw": "DD"
 				},
-				"url": {
-					"raw": "http://localhost:8000/notes/qwe_name",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"notes",
-						"qwe_name"
-					]
-				}
+				"url": "http://localhost:8000/notes/Money"
 			},
 			"response": []
 		},
 		{
-			"name": "/notes/{note_name}",
+			"name": "/notes/note_name",
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/notes/qwe_name",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"notes",
-						"qwe_name"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "UploadForm.html",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/UploadForm.html",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"UploadForm.html"
-					]
-				}
+				"url": "http://localhost:8000/notes/Money"
 			},
 			"response": []
 		}
